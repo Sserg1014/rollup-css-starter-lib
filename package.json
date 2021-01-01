@@ -1,0 +1,25 @@
+{
+  "name": "rollup-css-starter-lib",
+  "version": "1.0.0",
+  "main": "dist/cjs.js",
+  "module": "dist/esm.js",
+  "browser": "dist/umd.js",
+  "browser__name": "rollupCssStarterLib",
+  "dependencies": {},
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^11.0.1",
+    "@rollup/plugin-node-resolve": "^7.0.0",
+    "postcss": "^8.2.2",
+    "rollup": "^1.29.0",
+    "rollup-plugin-postcss": "^4.0.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "test": "node test/test.js",
+    "pretest": "npm run build"
+  },
+  "files": [
+    "dist"
+  ]
+}
